@@ -13,7 +13,7 @@ body{
 }
 hr{
     border-color: Green;
-    birder-width: 2px;
+    border-width: 2px;
 }
 .myname h1{
     font-family: "Arial Black", "Times New Roman";
