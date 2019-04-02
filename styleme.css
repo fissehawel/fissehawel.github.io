@@ -3,6 +3,37 @@
 */
 
 body{
-    margin: 25px 25px 25px 25px;
-    background-color: dimgray;
+    margin: 15px 50px 15px 50px;
+    background-color: rgba(75, 120, 55, 0.3);
+}
+
+.myname{
+    font-size: 18px;
+    font-family: "Arial Rounded MT Bold", "Times New Roman"
+}
+hr{
+    border-color: Green;
+    birder-width: 2px;
+}
+.myname h1{
+    font-family: "Arial Black", "Times New Roman";
+    color: rgb(100, 0, 100);
+}
+
+.myname strong{
+    font-weight: bold;
+    font-style: italic;
+    color:darkblue;
+}
+
+.moods strong{
+    font-size: 18px;
+    font-style: italic;
+    color: darkslategrey;
+}
+.funfacts h3{
+    font-weight: bold;
+    font-family: "Bookman Old Style", "Times New Roman";
+    font-style: italic;
+    color: darkslategrey;
 }
