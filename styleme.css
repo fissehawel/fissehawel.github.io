@@ -26,6 +26,18 @@ hr{
     color:darkblue;
 }
 
+h2::first-letter{
+    font-size: 1.5em;
+}
+
+h3::first-letter{
+    font-size: 1.5em;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}
+
 .mymovies a{
    text-decoration: none;
 }
