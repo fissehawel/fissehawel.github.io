@@ -26,6 +26,18 @@ hr{
     color:darkblue;
 }
 
+.mymovies a{
+   text-decoration: none;
+}
+
+.mymovies a:hover{
+    text-decoration: underline;
+}
+
+.mymovies a:active{
+    text-decoration: underline;
+}
+
 .moods strong{
     font-size: 18px;
     font-style: italic;
