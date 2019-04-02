@@ -32,6 +32,7 @@ hr{
 
 .mymovies a:hover{
     text-decoration: underline;
+    color: hotpink;
 }
 
 .mymovies a:active{
