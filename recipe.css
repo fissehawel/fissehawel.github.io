@@ -4,11 +4,15 @@ body{
     font-size: 11pt;
     font-family: Georgia, Garamond, serif ;
     margin: 10px 50px 10px 50px;
+    /*background-iamge: url("http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/silverware.jpg");*/
+   background-image: url("images/silverware.jpg");
+    background-repeat: repeat;
 }
 
 h1, h2, h3 {
     font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     text-decoration: underline;
+    letter-spacing: 0.25em;
     color: #A4A400;
     background-color: #F0F0F0;
 }
@@ -49,4 +53,7 @@ mark{
 
 pre{
     margin-left: 0px;
+}
+.list-inputs,.directions ul{
+    list-style-image: url('images/pie_icon.gif');
 }
