@@ -1,0 +1,52 @@
+body{
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif ;
+    margin: 10px 50px 10px 50px;
+}
+
+h1, h2, h3 {
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    color: #A4A400;
+    background-color: #F0F0F0;
+}
+
+h1{
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2, h3{
+    font-size: 18pt;
+    text-align: left;
+}
+
+a{
+    color: #A4A400;
+}
+
+.pie-photo{
+    text-align: left;
+}
+abbr{
+    text-decoration: underline;
+}
+mark{
+    text-decoration: line-through;
+    background-color: white;
+}
+.comments blockquote{
+    text-align: left;
+    background-color: #FFFFA8;
+}
+.comments em{
+    font-style: italic;
+    font-weight: bold;
+}
+
+pre{
+    margin-left: 0px;
+}
