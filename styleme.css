@@ -4,7 +4,7 @@
 
 body{
     margin: 15px 50px 15px 50px;
-    background-color: rgba(75, 120, 55, 0.3);
+    background-color: rgba(75, 120, 155, 0.3);
 }
 
 .myname{
@@ -47,8 +47,23 @@ p::first-letter{
     color: hotpink;
 }
 
-.mymovies a:active{
-    text-decoration: underline;
+.mymovies ol {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.mymovies li > dl {
+    display: none;
+}
+
+.mymovies li:hover > dl {
+    display: block;
+}
+
+dt{
+    color:rgb(180, 125, 10);
+    font-weight: bold;
 }
 
 .moods strong{
