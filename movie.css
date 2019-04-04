@@ -1,0 +1,132 @@
+body{
+    background-image: url(tmnt_images/background.png);
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.banner img{
+}
+.banner{
+    background-image: url(tmnt_images/bannerbg.png);
+    text-align: center;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-family: Tahoma, Verdana, "sans-serif";
+    text-shadow: 3px 3px  #999999;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.content-area {
+    width: 800px;
+    border: 4px gray solid;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #A2B964;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  /*justify-content: center;*/
+}
+.main-content{
+    padding-bottom: 0pt;
+    border-bottom: 0pt;
+    margin-bottom: 0pt;
+}
+
+.right-section{
+    width: 250px;
+    height: auto;
+    background-color: #A2B964;
+    font-size: 8pt;
+    font-family: Arial, "sans-serif";
+    padding: 0pt 0pt 10pt 0pt;
+    overflow: hidden;
+    border-top-right-radius: 10pt;
+
+}
+
+.right-section dl{
+    margin: 10pt;
+}
+
+.left-section{
+    float: left;
+    width: 550px;
+    height: auto;
+    background-image: url(tmnt_images/background.png);
+    overflow: hidden;
+    border-top-left-radius: 10pt;
+}
+
+.left-section .top{
+    font-size: 48pt;
+    color:red;
+    font-weight: bold;
+    background-image: url(tmnt_images/rbg.png);
+    background-repeat: repeat-x;
+    overflow: hidden;
+    border-top-left-radius: 10pt;
+}
+.left-section .top img{
+    vertical-align: bottom;
+}
+.left-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 90px;
+
+}
+.left-right {
+    width: 47%;
+    height: available;
+    margin-right: 2%;
+    position: relative;
+}
+.left-left {
+    width: 47%;
+    height: available;
+    margin-right: 2%;
+    margin-left: 2%;
+    position: relative;
+}
+.item-rv{
+    margin-bottom: 20pt;
+}
+.item-c {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px gray solid;
+    border-radius: 10px;
+    padding: 8px;
+    min-height: 20px;
+}
+.item-c img{
+    float:left;
+    margin-right: 5px;
+    min-height: 1em;
+    vertical-align: center;
+}
+
+.item-b{
+    font-style: italic;
+    text-align: left;
+    margin: 0px;
+}
+.item-b img{
+    margin-left: 5px;
+    float:left;
+}
+.foot-content {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.side-links{
+   float: right;
+}
