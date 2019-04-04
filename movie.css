@@ -83,13 +83,11 @@ h1{
 }
 .left-right {
     width: 47%;
-    height: available;
     margin-right: 2%;
     position: relative;
 }
 .left-left {
     width: 47%;
-    height: available;
     margin-right: 2%;
     margin-left: 2%;
     position: relative;
