@@ -1,0 +1,137 @@
+body {
+    font-family: sans-serif, Arial;
+    display: grid;
+    height: 80%;
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-template-areas: "header" "menu-columns" "footer";
+
+}
+.head-1{
+    background-color: lightblue;
+    text-align: center;
+    vertical-align: center;
+    grid-area: header;
+    align-self: center;
+}
+.menu-col{
+    grid-area: menu-columns;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    display: inline-block;
+    color: white;
+    background-color: #2F4F4F;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+}
+.menu1{
+    float: left;
+    padding: 10px 15px;
+    border-right:1px black solid;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: stretch;
+}
+.menu2{
+    float: left;
+    padding: 10px 15px;
+    border-right:1px black solid;
+    margin: 0px;
+}
+.menu3{
+    padding: 10px 15px;
+    border-right:1px black solid;
+    margin: 0px;
+
+}
+
+.columns{
+    align-self: stretch;
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0px;
+
+}
+.col-1{
+    width: 25%;
+    height: 100%;
+    background-color: #A9A9A9;
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.col-2{
+    width: 45%;
+    height: 100%;
+    align-self: stretch;
+    background-color: #C0C0C0;
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+    margin-top: 0px;
+}
+.col-3{
+    width: auto;
+    height: 100%;
+    align-self: stretch;
+    background-color: lightgray;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 0px;
+
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    background-color: #2F4F4F;
+    grid-area: footer;
+}
+/*
+*@media only screen and (min-width: 600px) {
+
+    body {
+        display: grid;
+        grid-template-rows: 2fr 1fr 4fr 2fr;
+        grid-template-areas: "header" "menu" "columns" "footer";
+    }
+    h1{
+        background-color: aqua;
+        text-align: center;
+    }
+    .menu{
+        display: inline-flex;
+        background-color:darkslategrey;
+
+    }
+    .menu1{
+        float: left;
+        background-color: dimgray;
+    }
+}*/
+
+
+/*@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-rows: 2fr 1fr 4fr 2fr;
+        grid-template-areas: "header" "menu" "columns" "footer";
+    }
+    h1{
+        background-color: aqua;
+        text-align: center;
+    }
+    .menu{
+        display: inline-flex;
+        background-color:darkslategrey;
+    }
+
+}
+*/
