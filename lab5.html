@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+    <script>
+        // A function to find the maximum of two numbers
+        function max(a, b){
+            if(typeof a == "number" && typeof b == "number") {
+                if (a >= b)
+                    return a;
+                else
+                    return b;
+            }
+            else
+                alert("All inputs must be numbers!")
+        }
+        // A function to find the maximu of three numbers
+        function maxOfThree(a, b, c){
+            if(a > b){
+                return max(a, c);
+            }
+            else
+                return max(b,c);
+        }
+        // A function to determine if an input character is a vowel.
+        function isVowel(c){
+            if(c.length == 1){
+                if(c === "a" || c==="A" || c === "e" || c==="E" ||
+                    c === "I" || c==="i" || c === "O" || c==="o" ||
+                    c === "u" || c==="U")
+                    return true;
+            }
+            else
+                return false;
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href = "task.css" type = "text/css" rel="stylesheet"/>
+    <title>Task</title>
+</head>
+<body>
+    <h1> Fisseha Atsbaha </h1>
+    <div class = "task-head">
+        <p> Task List </p>
+    </div>
+
+    <p>
+    <form name = "task-list" method = "post">
+        <label> Task</label> <br>
+        <input type = "text" size="50" placeholder="Morning meditation at Dalby Hall"> <br>
+
+        <label> Required by </label> <br>
+        <input type = "date" placeholder="dd/mm/yyyy"> <br>
+
+        <label> <strong>Category</strong></label> <br>
+        <select name = "category">
+            <option selected> Personal</option>
+            <option> Work </option>
+            <option> Family </option>
+        </select> <br>
+
+        <input type = "button" value = "Save Task"/>
+        <input type = "button" value = "Clear Task"/>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Due</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td> Return Library books </td>
+                <td>2019-04-12 </td>
+                <td> Personal </td>
+            </tr>
+            <tr>
+                <td>Perform project demo to stakeholders </td>
+                <td> 2019-04-13 </td>
+                <td> Work</td>
+            </tr>
+            <tr>
+                <td> Meet friends for dinner </td>
+                <td>2019-04-14</td>
+                <td> Personal</td>
+            </tr>
+        </table>
+        <input type = "button" value = "Add Task"/>
+
+    </form>
+
+    </p>
+    <div class = "tasks-count">
+        <p> You have 3 tasks </p>
+    </div
+
+
+</body>
+</html>

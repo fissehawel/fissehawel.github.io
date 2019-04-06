@@ -1,0 +1,55 @@
+body{
+    margin: 20px 50px 20px 30px;
+
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+}
+.task-head{
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+    padding: 5px;
+    background-color: #C0C0C0;
+    height: 60px;
+}
+form [type = "button"]{
+    background-color: #2F4F4F;;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #2F4F4F;
+}
+
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.tasks-count{
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 0px;
+    background-color: #C0C0C0;
+    height: 60px;
+}
