@@ -112,7 +112,7 @@ function filterLongWords(arr, len){
 
 function myFunctionTest(a,f){
     let b = f(); // f is a function passed from the calling object.
-    if(typeof a == typeof b && typeof a == "object" ){
+    if(typeof a === typeof b && typeof a === "object" ){
         if(a.length !== b.length){
             return "TEST FAILED";
         }
@@ -124,7 +124,7 @@ function myFunctionTest(a,f){
             }
         }
     }
-    else if(a !== b) {
+    else if( typeof a !== "object" && a !== b) {
         return "TEST FAILED";
     }
     else
@@ -169,37 +169,36 @@ function demo(){
             return reverse("!ereht iH");
         }));
 
+    let words = ["Hello", "Hi", "Good afternoon", "Holiday", "Weekends", "Good Bye!"];
+    console.log("Given string array: words = [\"Hello\", \"Hi\", \"Good afternoon\", \"Holiday\", \"Weekends\", \"Good Bye!\"]")
     console.log("7) Expected output of " +
-        "findLongestWord([\"Hello\", \"Hi\", \"Good afternoon\", \"Holiday\", \"Weekends\", \"Good Bye!\"])) is 14" +
-        " and " + myFunctionTest(14, function(){
-            return findLongestWord(["Hello", "Hi", "Good afternoon", "Holiday", "Weekends", "Good Bye!"]);
+        "findLongestWord(words) is 14" +
+        " and " + myFunctionTest(14,  function(){
+            return findLongestWord(words);
         }));
 
+    let expectedResult = ["Good afternoon", "Weekends", "Good Bye!"];
     console.log("8) Expected output of " +
-        "filterLongWords([\"Hello\", \"Hi\", \"Good afternoon\", \"Holiday\", \"Weekends\", \"Good Bye!\"], 7) " +
-        " [\"Good afternoon\", \"Weekends\", \"Good Bye!\"] and "
-        + myFunctionTest(["Good afternoon", "Weekends", "Good Bye!"],  function(){
-            return filterLongWords(["Hello", "Hi", "Good afternoon", "Holiday", "Weekends", "Good Bye!"], 7);
-        }));
+        "filterLongWords(words, 7) is [\"Good afternoon\", \"Weekends\", \"Good Bye!\"] and " +
+        myFunctionTest(expectedResult,  function(){
+            return filterLongWords(words, 7);}));
+
+    console.log("8) The output of filterLongWords(words, 7) " + filterLongWords(words, 7));
 
     // Code from lecture slide, modified;
     const a = [1,3,5,3,3];
+    console.log("Given the array a = [1,3,5,3,3]")
     const b = a.map(function(elem, i, array) {
         return elem *10;
     })
-    console.log(b);
+    console.log("Multiply each element of a by 10: " + b);
     const c = a.filter(function(elem, i, array){
         return elem == 3;});
-    console.log(c);
+    console.log("Elements of a that are equal to 3:" + c);
     const d = a.reduce(function(prevValue, elem, i, array){
         return prevValue * elem;
     });
-    console.log(d);
-
-    const d2 = a.find(function(elem) {return elem > 1;}); //3
-    const d3 = a.findIndex(function(elem) {return elem > 1;}); //1
-    console.log(d2);
-    console.log(d3);
+    console.log("product of all elements of a: " + d);
 }
 
 
