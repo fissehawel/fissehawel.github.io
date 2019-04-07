@@ -1,3 +1,14 @@
+window.onload = function(){
+    document.getElementById("bigdecor").onclick = decorate;
+
+   document.getElementById("bling-chk").onchange = changeStyle;
+
+    document.getElementById("igpay-btn").onclick = igpayAtinlay;
+
+    document.getElementById("malkov-btn").onclick = malkovich;
+}
+
+
 function decorate(){
     setInterval(timeDecoration, 500);
 }
@@ -14,7 +25,7 @@ function timeDecoration() {
 
 function changeStyle(){
     let textArea = document.getElementById("textArea");
-    const checkbox = document.getElementById("blingCheck");//.attr("checked");
+    const checkbox = document.getElementById("bling-chk");//.attr("checked");
     if(checkbox.checked){
         textArea.style.fontWeight = "bold";
         textArea.style.color = "green";
