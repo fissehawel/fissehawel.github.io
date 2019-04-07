@@ -85,7 +85,7 @@ function reverse(str){
         alert("Input is not a string.");
 }
 
-//Find longest word in the array
+//Find length of longest word in the array
 function findLongestWord(strArr){
     if(typeof strArr == "object"){
         let maxLen = strArr[0].length;
@@ -110,22 +110,94 @@ function filterLongWords(arr, len){
     }
 }
 
+function myFunctionTest(a,f){
+    let b = f(); // f is a function passed from the calling object.
+    if(typeof a == typeof b && typeof a == "object" ){
+        if(a.length !== b.length){
+            return "TEST FAILED";
+        }
+        else {
+            for (let i = 0; i < a.length; i++) {
+                if(a[i] !== b[i]){
+                    return "TEST FAILED";
+                }
+            }
+        }
+    }
+    else if(a !== b) {
+        return "TEST FAILED";
+    }
+    else
+        return "TEST SUCCEEDED";
+}
 
-// Code from lecture slide, modified;
-const a = [1,3,5,3,3];
-const b = a.map(function(elem, i, array) {
-    return elem *10;
-})
-console.log(b);
-const c = a.filter(function(elem, i, array){
-    return elem == 3;});
-console.log(c);
-const d = a.reduce(function(prevValue, elem, i, array){
-    return prevValue * elem;
-});
-console.log(d);
+// Demo
 
-const d2 = a.find(function(elem) {return elem > 1;}); //3
-const d3 = a.findIndex(function(elem) {return elem > 1;}); //1
-console.log(d2);
-console.log(d3);
+function demo(){
+    console.log("1) Expected output of max(20,10) is 20 and  " +
+        myFunctionTest(20, function(){
+            return max(10, 20);
+        }));
+
+    console.log("2) Expected output of max(20,10, 21) is 221 and  " +
+        myFunctionTest(21, function(){
+            return maxOfThree(20, 10, 21);
+        }));
+
+    console.log("3) Expected output of isVowel(\"T\") is false and  " +
+        myFunctionTest(false, function(){
+            return isVowel("T");
+        }));
+
+    console.log("3) Expected output of isVowel(\"U\") is true and  " +
+        myFunctionTest(true, function(){
+            return isVowel("U");
+        }));
+
+    console.log("4) Expected output of sum([2,7, 8, 3]) is 20 and  " +
+        myFunctionTest(20, function(){
+            return sum([2,7, 8, 3]);
+        }));
+
+    console.log("5) Expected output of multiply([2,7, 8, 3]) is 336 and  " +
+        myFunctionTest(336, function(){
+            return multiply([2,7, 8, 3]);
+        }));
+
+    console.log("6) Expected output of reverse(\"!ereht iH\") is \"Hi there!\" and  " +
+        myFunctionTest("Hi there!", function(){
+            return reverse("!ereht iH");
+        }));
+
+    console.log("7) Expected output of " +
+        "findLongestWord([\"Hello\", \"Hi\", \"Good afternoon\", \"Holiday\", \"Weekends\", \"Good Bye!\"])) is 14" +
+        " and " + myFunctionTest(14, function(){
+            return findLongestWord(["Hello", "Hi", "Good afternoon", "Holiday", "Weekends", "Good Bye!"]);
+        }));
+
+    console.log("8) Expected output of " +
+        "filterLongWords([\"Hello\", \"Hi\", \"Good afternoon\", \"Holiday\", \"Weekends\", \"Good Bye!\"], 7) " +
+        " [\"Good afternoon\", \"Weekends\", \"Good Bye!\"] and "
+        + myFunctionTest(["Good afternoon", "Weekends", "Good Bye!"],  function(){
+            return filterLongWords(["Hello", "Hi", "Good afternoon", "Holiday", "Weekends", "Good Bye!"], 7);
+        }));
+
+    // Code from lecture slide, modified;
+    const a = [1,3,5,3,3];
+    const b = a.map(function(elem, i, array) {
+        return elem *10;
+    })
+    console.log(b);
+    const c = a.filter(function(elem, i, array){
+        return elem == 3;});
+    console.log(c);
+    const d = a.reduce(function(prevValue, elem, i, array){
+        return prevValue * elem;
+    });
+    console.log(d);
+
+    const d2 = a.find(function(elem) {return elem > 1;}); //3
+    const d3 = a.findIndex(function(elem) {return elem > 1;}); //1
+    console.log(d2);
+    console.log(d3);
+}
