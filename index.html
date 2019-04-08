@@ -6,14 +6,23 @@
     <meta charset = "UTF-8"/>
     <title> Home </title>
     <style>
-      html {
-        margin: 20Px 20px 20px 20px;
+      body {
+        margin: 10Px 20px 20px 50px;
         padding: 10px 10px 10px 10px;
+        width: 50%;
+      }
+
+     .image {
+        float: left;
+        width: 20%
+        margin-left: 10px;
+       margin-bottom: 0px;
       }
       .links a{
-          color: blue;
-          font-weight: bold;
-          text-decoration: none;
+        color: blue;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 10px;
       }
       .links a:hover{
         color: purple;
@@ -21,13 +30,20 @@
         text-decoration: underline;
 
       }
+      .mylist {
+        float: left;
+        margin-left: 10px;
+      }
     </style>
   </head>
 
   <body>
+    <div class = "image">
+      <img src = "my_pic.jpg" alt = "My photo" width = "275" title = "Fisseha Welday"/>
+      <h1> Fisseha Atsbaha </h1>
+    </div>
 
-    <img src = "my_pic.jpg" alt = "My photo" width = "275" title = "Fisseha Welday"/>
-    <h1> Fisseha Atsbaha </h1>
+
     <p class = "links">
       <a href = "aboutme.html">  <strong>About Me</strong> </a> <br>
       <a href = "pie.html">  <strong>Pie Recipe</strong> </a> <br>
@@ -36,28 +52,28 @@
       <a href = "tasklist.html"> <strong>Tasks List</strong> </a> <br>
       <a href = "lab5.html">  <strong>JavaScript Demo</strong> </a> <br>
       <a href = "decoratemytext.html"> <strong> Decorate My Text </strong></a> <br>
+    </p>
+
+    <div class = "mylist">
       <strong>Below are my study topics for this week.</strong>
-    </p>
+      <ul>
+        <li> Today: Introduction to HTML and CSS </li>
+        <li> Tuesday: CSS for Styling </li>
+        <li> Wednesday: CSS for Page Layout </li>
+        <Li> Thursday: HTML5 forms </Li>
+        <li> Friday: JavaScript for Dynamic and Interactive Web Applications </li>
+        <li> Saturday: JavaScript Programming Environment</li>
+      </ul>
 
-    <ul>
-      <li> Today: Introduction to HTML and CSS </li>
-      <li> Tuesday: CSS for Styling </li>
-      <li> Wednesday: CSS for Page Layout </li>
-      <Li> Thursday: HTML5 forms </Li>
-      <li> Friday: JavaScript for Dynamic and Interactive Web Applications </li>
-      <li> Saturday: JavaScript Programming Environment</li>
-    </ul>
+          <a href="https://validator.w3.org/check/referer">
+          <img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img src=http://jigsaw.w3.org/css-validator/images/vcss alt="Valid CSS!"/>
+        </a>
 
-    <p>
-      <a href="https://validator.w3.org/check/referer">
-        <img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" />
-      </a>
-    </p>
-    <p>
-      <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img src=http://jigsaw.w3.org/css-validator/images/vcss alt="Valid CSS!"/>
-      </a>
-    </p>
+    </div>
+
 
   </body>
 
