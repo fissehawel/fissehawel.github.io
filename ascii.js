@@ -14,7 +14,7 @@ let frames = [];
 let i = 0;
 let delay = 250;
 let fontSizes = {"Tiny": "7pt", "Small": "10pt", "Medium": "12pt",
-    "Large": "16pt", "Extra Large": "24pt","XXL": "32p2"};
+    "Large": "16pt", "Extra Large": "24pt","XXL": "32px"};
 
 function beginAnimation() {
     //frames = ANIMATIONS["Exercise"].split("=====\n");
