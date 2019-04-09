@@ -29,8 +29,8 @@ function beginAnimation() {
     }
 }
 function updateText(){
-    key = document.getElementById("animation").value;
-    document.getElementById("text-area").value = ANIMATIONS[key];
+   let size = document.getElementById("animation").value;
+    document.getElementById("text-area").value = ANIMATIONS[size];
 }
 
 function changeFontSize(){
