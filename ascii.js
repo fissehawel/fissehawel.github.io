@@ -29,13 +29,13 @@ function beginAnimation() {
     }
 }
 function updateText(){
-   let size = document.getElementById("animation").value;
-    document.getElementById("text-area").value = ANIMATIONS[size];
+    key = document.getElementById("animation").value;
+    document.getElementById("text-area").value = ANIMATIONS[key];
 }
 
 function changeFontSize(){
-    key = document.getElementById("fontsize").value;
-    document.getElementById("text-area").style.fontSize = fontSizes[key];
+    let size = document.getElementById("fontsize").value;
+    document.getElementById("text-area").style.fontSize = fontSizes[size];
 }
 function animate(){
     // Check frame index.
