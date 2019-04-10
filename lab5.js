@@ -122,6 +122,7 @@ function myFunctionTest(a,f){
                     return "TEST FAILED";
                 }
             }
+            return "TEST SUCCEEDED";
         }
     }
     else if( typeof a !== "object" && a !== b) {
