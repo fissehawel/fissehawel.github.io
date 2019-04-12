@@ -1,0 +1,3 @@
+
+
+// Inheritance using Object.create()
