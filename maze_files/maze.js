@@ -1,9 +1,9 @@
 $(function(){
     $("#start").mouseenter(function(){
         $("#maze .boundary").css("background-color", "");
-        $("#status").text(undefined)
+        $("#status").text(undefined);
         let flag = true;
-
+        var timer = null;
         $("#maze .boundary").mouseover(function(){
             if(flag){
                 flag = false;
@@ -22,7 +22,7 @@ $(function(){
             if (flag) {
                 $("#status").text("You Win!");
                 flag = false;
-                setTimeout(tryAgain, 2500);
+               timer =  setTimeout(tryAgain, 2500);
             }
         });
     });
@@ -30,7 +30,7 @@ $(function(){
 function youLose(){
     $("#maze .boundary").css("background-color", "red");
     $("#status").text("You Lose!");
-    setTimeout(tryAgain, 2500);
+    timer = setTimeout(tryAgain, 2500);
 }
 function tryAgain(){
     $("#status").text('Click the \"S\" to begin');
