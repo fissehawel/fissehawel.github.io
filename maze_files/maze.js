@@ -22,7 +22,7 @@ $(function(){
             if (flag) {
                 $("#status").text("You Win!");
                 flag = false;
-                setTimeout(tryAgain, 2000);
+                setTimeout(tryAgain, 5000);
             }
         });
     });
@@ -30,7 +30,7 @@ $(function(){
 function youLose(){
     $("#maze .boundary").css("background-color", "red");
     $("#status").text("You Lose!");
-    setTimeout(tryAgain, 1000);
+    setTimeout(tryAgain, 5000);
 }
 function tryAgain(){
     $("#status").text('Click the \"S\" to begin');
